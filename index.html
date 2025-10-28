@@ -2,92 +2,191 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title>Jozaru</title>
+        <title>Portfolio Jozaru</title>
         <link rel="stylesheet" href="https://unpkg.com/7.css">
+        <link rel="icon" type="image/x-icon" href="media/portfolio.ico">
 
         <style>
             body {
                 margin: 0;
                 height: 100vh;
-                background-image: url('Vid1337.png');
+                background-image: url('media/windowsvista.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-position: center;
                 font-family: sans-serif;
             }
+
+            /* Contenedor principal */
+            .three-columns {
+                display: flex;
+                justify-content: space-between; /* separa columnas horizontalmente */
+                margin: 20px 0;
+            }
+
+            /* Cada columna */
+            .column {
+                flex: 1;                  /* cada columna ocupa el mismo espacio */
+                text-align: center;       /* centra el contenido */
+                margin: 0 10px;           /* separación entre columnas */
+            }
+
+            /* Imagen dentro de la columna */
+            .column img {
+                width: 64px;
+                height: 64px;
+                display: block;
+                margin: 0 auto 10px;      /* centra imagen y deja espacio debajo */
+            }
+
+            /* Título con enlace */
+            .column p {
+                text-decoration: none;
+                font-weight: bold;
+                color: #333;
+                font-size: 16px;
+            }
+
+            /* Imagen grande centrada */
+            .main-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 30px 0;
+            }
+
+            .main-image img {
+                max-width: 25%;
+                height: auto;
+                
+            }
+
+
             </style>
     </head>
 
     <body>
         <div class="background">
-        <div class="window glass active" style="max-width: 100%; margin: 1%;" >
-            <div class="title-bar">
-            <div class="title-bar-text">Portfolio Viewer - Jozaru</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Close"></button>
-            </div>
-            </div>
-            <div class="window-body has-space">
-                <ul role="menubar" class="can-hover">
-                    <li role="menuitem" tabindex="0" aria-haspopup="true">
-                        File
-                        <ul role="menu">
-                        <li role="menuitem">
-                            <a href="#menubar">
-                            Open <span>Ctrl+O</span>
-                            </a>
-                        </li>
-                        <li role="menuitem">
-                            <a href="#menubar">
-                            Save <span>Ctrl+S</span>
-                            </a>
-                        </li>
-                        <li role="menuitem" class="has-divider">
-                            <a href="#menubar">
-                            Save As... <span>Ctrl+Shift+S</span>
-                            </a>
-                        </li>
-                        <li role="menuitem"><a href="#menubar">Exit</a></li>
-                        </ul>
-                    </li>
-                    <li role="menuitem" tabindex="0" aria-haspopup="true">
-                        Edit
-                        <ul role="menu">
-                        <li role="menuitem"><a href="#menubar">Undo</a></li>
-                        <li role="menuitem"><a href="#menubar">Copy</a></li>
-                        <li role="menuitem"><a href="#menubar">Cut</a></li>
-                        <li role="menuitem" class="has-divider"><a href="#menubar">Paste</a></li>
-                        <li role="menuitem"><a href="#menubar">Delete</a></li>
-                        <li role="menuitem"><a href="#menubar">Find...</a></li>
-                        <li role="menuitem"><a href="#menubar">Replace...</a></li>
-                        <li role="menuitem"><a href="#menubar">Go to...</a></li>
-                        </ul>
-                    </li>
-                    <li role="menuitem" tabindex="0" aria-haspopup="true">
-                        View
-                        <ul role="menu">
+            <div class="window glass active" style="max-width: 100%; margin: 1%;" >
+                <div class="title-bar">
+                
+                <div class="title-bar-text">
+                    <p style="margin: 0px; border:0px; padding:0px;">
+                        <img src="media/browser.ico" alt="Favicon" width="16" height="16">
+                        Portfolio Viewer - Jozaru
+                    </p>
+                </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+                </div>
+                <div class="window-body has-space">
+                    <ul role="menubar" class="can-hover">
                         <li role="menuitem" tabindex="0" aria-haspopup="true">
-                            Zoom
+                            File
                             <ul role="menu">
-                            <li role="menuitem"><button>Zoom In</button></li>
-                            <li role="menuitem"><button>Zoom Out</button></li>
+                            <li role="menuitem">
+                                <a href="https://khang-nd.github.io/7.css">
+                                Open <span>Ctrl+O</span>
+                                </a>
+                            </li>
+                            <li role="menuitem">
+                                <a href="https://khang-nd.github.io/7.css">
+                                Save <span>Ctrl+S</span>
+                                </a>
+                            </li>
+                            <li role="menuitem" class="has-divider">
+                                <a href="https://khang-nd.github.io/7.css">
+                                Save As... <span>Ctrl+Shift+S</span>
+                                </a>
+                            </li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Exit</a></li>
                             </ul>
                         </li>
-                        <li role="menuitem"><a href="#menubar">Status Bar</a></li>
-                        </ul>
-                    </li>
-                    <li role="menuitem" tabindex="0" aria-haspopup="true">
-                        Help
-                        <ul role="menu">
-                        <li role="menuitem"><a href="#menubar">View Help</a></li>
-                        <li role="menuitem"><a href="#menubar">About</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li role="menuitem" tabindex="0" aria-haspopup="true">
+                            Edit
+                            <ul role="menu">
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Undo</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Copy</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Cut</a></li>
+                            <li role="menuitem" class="has-divider"><a href="https://khang-nd.github.io/7.css">Paste</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Delete</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Find...</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Replace...</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Go to...</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" tabindex="0" aria-haspopup="true">
+                            View
+                            <ul role="menu">
+                            <li role="menuitem" tabindex="0" aria-haspopup="true">
+                                Zoom
+                                <ul role="menu">
+                                <li role="menuitem"><button>Zoom In</button></li>
+                                <li role="menuitem"><button>Zoom Out</button></li>
+                                </ul>
+                            </li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">Status Bar</a></li>
+                            </ul>
+                        </li>
+                        <li role="menuitem" tabindex="0" aria-haspopup="true">
+                            Help
+                            <ul role="menu">
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">View Help</a></li>
+                            <li role="menuitem"><a href="https://khang-nd.github.io/7.css">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="main-image">
+                        <img src="media/PortfolioJozaruWordart.png" alt="Imagen principal">
+                    </div>
+
+                    <div class="three-columns">
+                        <div class="column">
+                            <img src="media/about.png" alt="About Me">
+                            <p>Sobre mí</p><br>
+                            <button>A ver...</button>
+                        </div>
+                        <div class="column">
+                            <img src="media/carrerCV.png" alt="Carrera">
+                            <p>Carrera</p><br>
+                            <button>A ver...</button>
+                        </div>
+                        <div class="column">
+                            <img src="media/code.png" alt="Proyectos">
+                            <p>Proyectos</p><br>
+                            <button>A ver...</button>
+                        </div>
+                    </div>
+
+                    <audio controls autoplay loop>
+                        <source src="https://www.youtube.com/watch?v=IlF0meDwfXI" type="audio/mpeg">
+                    </audio>
+
+                </div>
             </div>
-        </div>
+
+              <div class="window glass active" style="max-width: 100%; margin: 1%;" >
+                <div class="title-bar">
+                
+                <div class="title-bar-text">
+                    <p style="margin: 0px; border:0px; padding:0px;">
+                        <img src="media/.ico" alt="Favicon" width="16" height="16">
+                        External Links and Credits - Jozaru
+                    </p>
+                    <p>https://www.makewordart.com/</p>
+                    <p>https://khang-nd.github.io/7.css</p>
+                </div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+                </div>
+                <div class="window-body has-space">
+                </div>
         </div>
 
         
